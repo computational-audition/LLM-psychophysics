@@ -1,0 +1,72 @@
+{% macro audio_box(url, i) %}
+    <div class="audio">
+        <audio id="audio{{ i }}">
+            <source src="{{ url }}" type="audio/wav">
+            Your browser does not support the audio tag.
+            </audio>
+        <button style = "margin:5px" type="button" class="play_button btn push-button btn-secondary" 
+                onclick="$('.play_button').each(function(idx, x){x.disabled = true}); play_audio('audio{{ i }}');">
+            Play audio {{ i }}
+        </button>
+    </div>
+    <script>
+        var duration = 2.1 // seconds
+        function play_audio(_id) {
+            var audio = document.getElementById(_id);
+            var url = audio.children[0].src;
+            audio.currentTime = 0;
+            audio.play();
+            setTimeout(function () {
+                audio.pause();
+
+                if (finished_audios.indexOf(_id) === -1) {
+                    finished_audios.push(_id)
+                }
+
+                $('.play_button').each(function (idx, x) {
+                    x.disabled = false
+                })
+
+                if (finished_audios.length >= 2) {
+                    $('.response').each(function (idx, x) {
+                        x.disabled = false
+                    })
+                }
+                psynet.log.debug('Finished audio ' + url)
+            }, duration * 1000)
+        }
+
+    </script>
+{% endmacro %}
+
+{% macro audio_prompt(config) %}
+    <style>
+        .audio_box_container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .text_prompt {
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+
+    <div class="text_prompt">
+        {{ config.text }}
+    </div>
+    <script>
+        var finished_audios = [];
+        psynet.trial.onEvent("submitEnable", function () {
+            $('.response').each(function (idx, x) {
+                x.disabled = true
+            })
+        });
+    </script>
+    <div class="audio_box_container">
+        {{ audio_box(config.definition.stim_1, 1) }}
+        {{ audio_box(config.definition.stim_2, 2) }}
+    </div>
+
+
+{% endmacro %}

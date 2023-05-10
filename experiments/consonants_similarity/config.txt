@@ -1,0 +1,42 @@
+[Launch mode]
+mode = sandbox
+
+[Payment information]
+title = Simple sound similarity task (approximately $1.36 bonus!)
+base_payment = 0.10
+
+[Recruitment strategy]
+auto_recruit = true
+lifetime = 24
+duration = 2
+us_only = true
+approve_requirement = 99
+ad_group = Game
+browser_exclude_rule = MSIE, mobile, tablet
+disable_when_duration_exceeded = False
+mturk_qualification_requirements = file:mturk_qualifications.json
+qualification_blacklist = cap-usr-list
+
+
+[Ad metadata]
+description = Judge how similar the sounds of vocal consonants are! You will receive a bonus of approx. $1.36 upon completion of the full 9-minute task.
+keywords = similarity
+contact_email_on_error = computational.audition@gmail.com
+organization_name = Max Planck Institute for Empirical Aesthetics
+
+[Database]
+database_url = postgresql://postgres@localhost/dallinger
+database_size = standard-2
+
+[Server]
+# Dyno types: hobby, standard-1x, standard-2x, performance-m, performance-l, probably performance-m is best
+dyno_type = performance-m
+num_dynos_web = 2
+num_dynos_worker = 1
+redis_size = premium-3
+host = 0.0.0.0
+clock_on = true
+
+[Dashboard]
+dashboard_password = capcapcap2021!
+dashboard_user = cap

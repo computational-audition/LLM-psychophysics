@@ -1,0 +1,53 @@
+[Parameters]
+aws_region = us-east-1
+smtp_host = smtp.gmail.com:587
+smtp_username = cocosci.turk@gmail.com
+contact_email_on_error = cocosci.turk@gmail.com
+dallinger_email_address = cocosci.turk@gmail.com
+replay = False
+mode = live
+enable_global_experiment_registry = False
+language = en
+auto_recruit = True
+assign_qualifications = True
+us_only = True
+disable_when_duration_exceeded = False
+webdriver_type = chrome_headless
+chrome-path = /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+clock_on = True
+heroku_python_version = 3.7.9
+sentry = False
+redis_size = premium-3
+worker_multiplier = 1.5
+num_dynos_web = 2
+num_dynos_worker = 1
+host = 0.0.0.0
+base_port = 5000
+logfile = -
+loglevel = 0
+threads = auto
+whimsical = True
+title = Simple similarity task (approximately $2.6 bonus!)
+base_payment = 0.1
+lifetime = 24
+duration = 2.0
+approve_requirement = 99
+ad_group = Game
+browser_exclude_rule = MSIE, mobile, tablet
+mturk_qualification_requirements = [
+	    {
+	        "QualificationTypeId": "00000000000000000040",
+	        "Comparator": "GreaterThanOrEqualTo",
+	        "IntegerValues": [5000],
+	        "ActionsGuarded": "DiscoverPreviewAndAccept"
+	    }
+	]
+description = Listen to sounds and judge how similar they are! You will receive a bonus of approx. $2.6 upon completion of the full 13-minute task.
+keywords = perception
+organization_name = Princeton Psychology Department
+database_size = standard-2
+dyno_type = performance-m
+docker_image_base_name = similarity-chords
+id = acada7d1-4b92-4744-7a93-156aab13ceb6
+heroku_app_id_root = simpitchv2
+

@@ -1,0 +1,8 @@
+.DS_Store
+.vscode/settings.json
+server.log
+__pycache__/__init__.cpython-37.pyc
+__pycache__/experiment.cpython-37.pyc
+*.pyc
+.idea
+.Rproj.user

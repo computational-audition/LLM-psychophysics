@@ -1,0 +1,8 @@
+[
+    {
+        "QualificationTypeId": "00000000000000000040",
+        "Comparator": "GreaterThanOrEqualTo",
+        "IntegerValues": [3000],
+        "ActionsGuarded": "DiscoverPreviewAndAccept"
+    }
+]

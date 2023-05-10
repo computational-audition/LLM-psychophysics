@@ -1,0 +1,3 @@
+"id","f0_1","chord_1","f0_2","chord_2","synth","parametrization","shepardize","target","type","idx_1","idx_2"
+0,60,"[]",61,"[]","harmonic","cumulative",FALSE,"similar","similarity",1,2
+1,60,"[]",84,"[]","harmonic","cumulative",FALSE,"similar","similarity",1,25

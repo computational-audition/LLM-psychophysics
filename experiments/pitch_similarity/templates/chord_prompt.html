@@ -1,0 +1,62 @@
+{% macro chord_prompt(config) %}
+
+<style>
+    .main_div {
+        background-color: white;
+        padding: 30px;
+    }
+</style>
+
+<script type = "text/javascript" src = "/static/scripts/Tone.js"></script>
+<script type = "text/javascript" src = "/static/scripts/tonejs-ui.js"></script>
+<script type = "text/javascript" src = "/static/scripts/synthesis.js"></script>
+
+<script>
+    var chords = [{
+            "f0":JSON.parse("{{ config.chords.chords.f0_1 }}"),
+            "intervals":JSON.parse("{{ config.chords.chords.chord_1 }}"),
+            "synth":"{{ config.chords.chords.synth }}",
+            "parametrization":"{{ config.chords.chords.parametrization }}",
+            "shepardize":("{{ config.chords.chords.shepardize }}" == "True"),
+            "rolloff": none_helper("{{ config.chords.chords.rolloff }}"),
+            "custom_timbre": none_helper("{{ config.chords.chords.custom_timbre }}")
+        },
+        {
+            "f0":JSON.parse("{{ config.chords.chords.f0_2 }}"),
+            "intervals":JSON.parse("{{ config.chords.chords.chord_2 }}"),
+            "synth":"{{ config.chords.chords.synth }}",
+            "parametrization":"{{ config.chords.chords.parametrization }}",
+            "shepardize":("{{ config.chords.chords.shepardize }}" == "True"),
+            "rolloff": none_helper("{{ config.chords.chords.rolloff }}"),
+            "custom_timbre": none_helper("{{ config.chords.chords.custom_timbre }}")
+        },
+    ]
+
+    var swap = JSON.parse("{{ config.chords.chords.swap }}")
+    chords = [chords[swap], chords[1 - swap]]
+        
+    var active_nodes = additive_synth_setter(chords[0]["intervals"].length + 1, chords[0]["shepardize"])
+
+    window.onload = function() {
+        
+        setTimeout(function() {
+            psynet.submit.disable();
+        }, 100);
+
+        setTimeout(function() {
+            play_list(active_nodes,chords);
+        }, 500);
+        
+        setTimeout(function() {
+            psynet.submit.enable();
+        }, 1000 * JSON.parse("{{ config.chords.chords.time_to_wait_in_sec }}"));
+    }; 
+    
+
+</script>
+
+<button type="button" onclick="play_list(active_nodes,chords)()">Replay</button>
+
+{{ psynet_prompts.simple(config) }}
+
+{% endmacro %}

@@ -1,0 +1,89 @@
+@keyframes expand {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+figure {
+    margin: 0 auto;
+    position: relative;
+}
+
+.chart {
+    overflow: hidden;
+    width: 0%;
+    animation: expand .5s ease forwards;
+}
+
+.progress {
+    position: relative;
+    color: #fff;
+    height: 40px;
+    margin-bottom: 5px;
+    background-color: #007bff;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity, .3s ease;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #007bff;
+}
+
+.progress.spending {
+    height: 25px;
+    margin-bottom: 10px;
+    cursor: default;
+    background-color: #28a745;
+}
+
+.progress.spending.scarce {
+    background-color: #ffc107;
+}
+
+.progress.spending.very-scarce {
+    background-color: #dc3545;
+}
+
+.progress:hover {
+    filter: brightness(90%);
+}
+
+.progress-bar {
+    background-color: #34487E;
+}
+
+.progress-bar.spending {
+    background-color: #1e7e34;
+}
+
+.progress-bar.spending.scarce {
+    background-color: #d39e00;
+}
+
+.progress-bar.spending.very-scarce {
+    background-color: #bd2130;
+}
+
+ul.details {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.spending-limits-tooltip {
+    background-color: #fff8c4;
+    border: solid 2px #f2c779;
+    border-radius: 6px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: absolute;
+    left: 414px;
+    top: 37px;
+    width: 376px;
+}

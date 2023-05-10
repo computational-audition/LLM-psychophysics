@@ -1,0 +1,17 @@
+stim_id,stimulus,sex,dataset,speaker
+0,Alveolar_nasal.mp3,female,internationalphoneticassociation-org,JH
+1,Bilabial_nasal.mp3,female,internationalphoneticassociation-org,JH
+2,Voiced_alveolar_fricative.mp3,female,internationalphoneticassociation-org,JH
+3,Voiced_alveolar_plosive.mp3,female,internationalphoneticassociation-org,JH
+4,Voiced_bilabial_plosive.mp3,female,internationalphoneticassociation-org,JH
+5,Voiced_dental_fricative.mp3,female,internationalphoneticassociation-org,JH
+6,Voiced_labiodental_fricative.mp3,female,internationalphoneticassociation-org,JH
+7,Voiced_postalveolar_fricative.mp3,female,internationalphoneticassociation-org,JH
+8,Voiced_velar_plosive.mp3,female,internationalphoneticassociation-org,JH
+9,Voiceless_alveolar_fricative.mp3,female,internationalphoneticassociation-org,JH
+10,Voiceless_alveolar_plosive.mp3,female,internationalphoneticassociation-org,JH
+11,Voiceless_bilabial_plosive.mp3,female,internationalphoneticassociation-org,JH
+12,Voiceless_dental_fricative.mp3,female,internationalphoneticassociation-org,JH
+13,Voiceless_labiodental_fricative.mp3,female,internationalphoneticassociation-org,JH
+14,Voiceless_postalveolar_fricative.mp3,female,internationalphoneticassociation-org,JH
+15,Voiceless_velar_plosive.mp3,female,internationalphoneticassociation-org,JH

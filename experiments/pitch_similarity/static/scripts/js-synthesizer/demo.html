@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<script type = "text/javascript" src = "Tone.js"></script>
+<script type = "text/javascript" src = "instruments.js"></script>
+<script type = "text/javascript" src = "synthesis.js"></script>
+
+<script>    
+// EXAMPLE STIMULUS
+var stimulus = {
+    "notes": [
+        {"pitches": [60], "duration": 1, "padding": 0.25, "channel": "1"},
+        {"pitches": [60,64], "duration": 2, "padding": 0.5, "channel": "2"},
+        {"pitches": [60,64,67], "duration": 1, "padding": 0.5, "channel": "3"},
+        {"pitches": [60,63,67], "duration": 1, "padding": 0.5, "channel": "4"},
+        {"pitches": [63,67,72], "duration": 1, "padding": 0.5, "channel": "4"},
+        {"pitches": [60,72], "duration": 1, "padding": 0.5, "channel": "5"} 
+    ],
+    "channels": {
+        "1": {"synth": {"type": "harmonic"}}, // simple pre-defined additive timbres, e.g. harmonic complex tones
+        "2": {"synth": {"type": "piano"}}, // real instrument sounds using samplers
+        "3": {"synth": {"type": "additive", "params": {"amps": [0.3,0.4,0,0.1,0.2], "freqs": [1,2.1,4.8,7.2,10.6]}}}, // custom additive timbres
+        "4": {"synth": {"type": "pure", "NSH": 4}}, // Shepardize timbres by changing the number of octave transpositions
+        "5": {"synth": {"type": "stretched"}} // inharmonic tones
+    }
+}
+</script>
+
+<script>
+// PRELOAD INSTRUMENT SAMPLERS THAT YOU WANT TO USE
+LOADED_INSTRUMENTS = {
+  "piano": load_sampler("piano"),
+  "guitar": load_sampler("guitar")
+}
+// PRELOAD ADDITIVE SYNTHESIS NODES
+ACTIVE_NODES = generate_additive_nodes()
+</script>
+
+<button type="button">Click me!</button>
+<script>
+// for demo purpose only, browsers allow audio to be played only after a user gesture (e.g. click)
+document.querySelector('button')?.addEventListener('click', async () => {
+	await Tone.start()
+    console.log('audio is ready')
+
+    // PLAY STIMULUS ON CLICK 
+    play_stimulus(stimulus)
+})
+</script>
+</html>
