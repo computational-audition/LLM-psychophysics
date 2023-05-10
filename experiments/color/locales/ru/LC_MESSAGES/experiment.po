@@ -1,0 +1,157 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Last-Translator: DeepL API\n"
+"Language-Team: DeepL\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: experiment.py
+msgid "Color names may not contain numbers."
+msgstr "Названия цветов не могут содержать цифр."
+
+#: experiment.py
+msgid "Color names may not contain spaces."
+msgstr "Названия цветов не должны содержать пробелов."
+
+#: experiment.py
+msgid "Color names may not contain symbols other than letters."
+msgstr "Названия цветов не могут содержать никаких символов, кроме букв."
+
+#: experiment.py
+msgid "Have you been diagnosed with color blindness?"
+msgstr "Был ли у вас диагноз \"дальтонизм\"?"
+
+#: experiment.py
+msgid "No"
+msgstr "Нет"
+
+#: experiment.py
+msgid "Number of color names so far: "
+msgstr "Количество названий цветов на данный момент: "
+
+#: experiment.py
+msgid "Only use lower-case letters."
+msgstr "Используйте только строчные буквы."
+
+# "color terms" is a bit strange, translating as color names
+#: experiment.py
+msgid "Please name at least 8 basic color names."
+msgstr "Укажите не менее 8 названий основных цветов."
+
+#: experiment.py
+msgid "Press enter after each color name."
+msgstr "Нажмите клавишу Enter после каждого названия цвета."
+
+#: experiment.py
+msgid "Type more color names"
+msgstr "Введите больше названий цветов"
+
+#: experiment.py
+msgid "Yes"
+msgstr "Да"
+
+#: experiment.py
+#, python-format
+msgid "You need to specify at least {N_TAGS} color names to continue."
+msgstr ""
+"Чтобы продолжить, вам нужно указать не менее {N_TAGS} названий цветов."
+
+#. ""
+#: experiment.py
+#, fuzzy
+msgctxt "ad"
+msgid "Color naming experiment (Chrome browser required, 9 minutes)"
+msgstr "Эксперимент по определению цвета (требуется браузер Chrome, 9 минут)"
+
+#. ""
+#: experiment.py
+#, fuzzy
+msgctxt "ad"
+msgid ""
+"In this experiment you will be presented with a square of a particular color"
+" and will be required to select the most suitable color term from a list of "
+"options."
+msgstr ""
+"В этом эксперименте Вам будет представлен квадрат определенного цвета, и Вы "
+"должны будете выбрать наиболее подходящий цветовой термин из списка "
+"вариантов."
+
+#. ""
+#: experiment.py
+#, fuzzy
+msgctxt "ad"
+msgid "Please use Chrome browser."
+msgstr "Пожалуйста, используйте браузер Chrome."
+
+#. ""
+#: experiment.py
+#, fuzzy
+msgctxt "ad"
+msgid "The test takes about 9 minutes."
+msgstr "Тест занимает около 9 минут."
+
+#. ""
+#: experiment.py
+#, fuzzy
+msgctxt "ad"
+msgid "You will be compensated for the duration of the experiment."
+msgstr "Вам будет выплачена компенсация за время проведения эксперимента."
+
+#: experiment.py
+msgctxt "instructions"
+msgid ""
+"During this experiment, you will be presented with a square of a particular "
+"color and will be required to select the most suitable color term from a "
+"list of options."
+msgstr ""
+"В ходе этого эксперимента вам будет представлен квадрат определенного цвета,"
+" и вам нужно будет выбрать наиболее подходящее название цвета из списка "
+"вариантов."
+
+#: experiment.py
+msgctxt "instructions"
+msgid ""
+"If we detect any inconsistencies in your answers, we may terminate the "
+"experiment prematurely."
+msgstr ""
+"Если мы обнаружим какие-либо несоответствия в ваших ответах, мы можем "
+"досрочно прекратить эксперимент."
+
+#: experiment.py
+msgctxt "instructions"
+msgid ""
+"Please be aware that some of the colors may be repeated to verify "
+"consistency of your choices."
+msgstr ""
+"Имейте в виду, что некоторые цвета могут повторяться, чтобы убедиться в "
+"согласованности вашего выбора."
+
+#: experiment.py
+msgctxt "instructions"
+msgid ""
+"The best strategy is to answer each question truthfully, as attempting to "
+"memorize responses may prove difficult."
+msgstr ""
+"Лучшая стратегия - отвечать на каждый вопрос правдиво, так как попытка "
+"запомнить ответы может оказаться сложной."
+
+#: experiment.py
+msgctxt "prompt"
+msgid "Which of these names best describes the color above?"
+msgstr "Какое из этих названий лучше всего описывает вышеуказанный цвет?"
+
+#: experiment.py
+msgctxt "prompt"
+msgid "You will see below a list of 15 basic color names."
+msgstr "Ниже Вы увидите список из 15 основных названий цветов."
+
+#. ""
+#: templates/custom_control.html
+#, fuzzy
+msgid "Next"
+msgstr "Следующий"

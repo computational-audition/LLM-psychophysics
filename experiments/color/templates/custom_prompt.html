@@ -1,0 +1,47 @@
+{% macro rgb_color(params) %}
+    <style>
+        .color-box-container {
+            display: flex;
+            justify-content: center;
+        }
+        .color-box {
+            width: 200px;
+            height: 200px;
+            margin: 0px;
+            border-style: solid;
+            border-color: black;
+            background-color: rgb({{ params.rgb[0] }}, {{ params.rgb[1] }}, {{ params.rgb[2] }});
+        }
+
+        .btn-primary {
+            --bs-btn-bg: black !important;
+            --bs-btn-border-color: black !important;
+            --bs-btn-hover-bg: black !important;
+            --bs-btn-hover-border-color: black !important;
+            --bs-btn-active-bg: black !important;
+            --bs-btn-active-border-color: black !important;
+            --bs-btn-disabled-bg: black !important;
+            --bs-btn-disabled-border-color: black !important;
+        }
+
+        .progress, .progress-stacked {
+            --bs-progress-bar-bg: black !important;
+        }
+    </style>
+
+    <div class="color-box-container">
+        <div class="color-box"></div>
+    </div>
+
+        {% if params.text is not none %}
+        <style>
+            #prompt-text {
+                text-align: {{ params.text_align }};
+            }
+        </style>
+
+        <div class="mt-5" id="prompt-text">
+            {{ params.text }}
+        </div>
+    {% endif %}
+{% endmacro %}

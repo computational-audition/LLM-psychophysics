@@ -1,0 +1,127 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: experiment.py
+msgid "Color names may not contain numbers."
+msgstr ""
+
+#: experiment.py
+msgid "Color names may not contain spaces."
+msgstr ""
+
+#: experiment.py
+msgid "Color names may not contain symbols other than letters."
+msgstr ""
+
+#: experiment.py
+msgid "Have you been diagnosed with color blindness?"
+msgstr ""
+
+#: experiment.py
+msgid "No"
+msgstr ""
+
+#: experiment.py
+msgid "Number of color names so far: "
+msgstr ""
+
+#: experiment.py
+msgid "Only use lower-case letters."
+msgstr ""
+
+#: experiment.py
+msgid "Please name at least 8 basic color names."
+msgstr ""
+
+#: experiment.py
+msgid "Press enter after each color name."
+msgstr ""
+
+#: experiment.py
+msgid "Type more color names"
+msgstr ""
+
+#: experiment.py
+msgid "Yes"
+msgstr ""
+
+#: experiment.py
+#, python-brace-format
+msgid "You need to specify at least {N_TAGS} color names to continue."
+msgstr ""
+
+#: experiment.py
+msgctxt "ad"
+msgid "Color naming experiment (Chrome browser required, 9 minutes)"
+msgstr ""
+
+#: experiment.py
+msgctxt "ad"
+msgid ""
+"In this experiment you will be presented with a square of a particular color"
+" and will be required to select the most suitable color term from a list of "
+"options."
+msgstr ""
+
+#: experiment.py
+msgctxt "ad"
+msgid "Please use Chrome browser."
+msgstr ""
+
+#: experiment.py
+msgctxt "ad"
+msgid "The test takes about 9 minutes."
+msgstr ""
+
+#: experiment.py
+msgctxt "ad"
+msgid "You will be compensated for the duration of the experiment."
+msgstr ""
+
+#: experiment.py
+msgctxt "instructions"
+msgid ""
+"During this experiment, you will be presented with a square of a particular "
+"color and will be required to select the most suitable color term from a "
+"list of options."
+msgstr ""
+
+#: experiment.py
+msgctxt "instructions"
+msgid ""
+"If we detect any inconsistencies in your answers, we may terminate the "
+"experiment prematurely."
+msgstr ""
+
+#: experiment.py
+msgctxt "instructions"
+msgid ""
+"Please be aware that some of the colors may be repeated to verify "
+"consistency of your choices."
+msgstr ""
+
+#: experiment.py
+msgctxt "instructions"
+msgid ""
+"The best strategy is to answer each question truthfully, as attempting to "
+"memorize responses may prove difficult."
+msgstr ""
+
+#: experiment.py
+msgctxt "prompt"
+msgid "Which of these names best describes the color above?"
+msgstr ""
+
+#: experiment.py
+msgctxt "prompt"
+msgid "You will see below a list of 15 basic color names."
+msgstr ""
+
+#: templates/custom_control.html
+msgid "Next"
+msgstr ""

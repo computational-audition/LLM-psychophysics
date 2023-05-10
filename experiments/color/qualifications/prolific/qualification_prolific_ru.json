@@ -1,0 +1,40 @@
+{
+    "device_compatibility": [
+        "desktop"
+    ],
+    "eligibility_requirements": [
+        {
+            "type": "select",
+            "attributes": [
+                {
+                    "label": "Russian",
+                    "name": "Russian",
+                    "value": true,
+                    "index": 53
+                }
+            ],
+            "query": {
+                "id": "54ac6ea9fdf99b2204feb899",
+                "title": "First Language"
+            },
+            "_cls": "web.eligibility.models.SelectAnswerEligibilityRequirement"
+        },
+        {
+            "type": "select",
+            "attributes": [
+                {
+                    "label": "I was raised with my native language only",
+                    "name": "I was raised with my native language only",
+                    "value": true,
+                    "index": 0
+                }
+            ],
+            "query": {
+                "id": "59c2434b5364260001dc4b0a",
+                "title": "Were you raised monolingual?"
+            },
+            "_cls": "web.eligibility.models.SelectAnswerEligibilityRequirement"
+        }
+    ],
+    "peripheral_requirements": []
+}
