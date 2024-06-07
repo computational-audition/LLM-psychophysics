@@ -1,4 +1,5 @@
-clear all;close all;clc
+clear all;close all;clc % "To begin at the beginning" Under Milk Wood – Dylan Thomas
+
 %addpath('~/ResearchMIT/toolboxes/nUTIL/');
 addpath('supporting_code/')
 

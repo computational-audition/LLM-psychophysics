@@ -7,7 +7,7 @@ tres=readtable(fname);
 tres=table2cell(tres(2:end,:));
 for I=1:size(tres,1)
     val=tres(I,end);
-    assert(val{1}==I)
+    assert((val{1}==I)) % last column has col;umnnumber
 end
 tres=tres(:,1:(end-1));
 is_print=true;
@@ -25,7 +25,9 @@ for I=1:size(tres,1)
     sel=my_ustrs{1};
     sres{I}=sel;
     pres(I)=p;
+
     nres(I)=find(strcmp(ustrs,sel));
+
 end
 %%
 
