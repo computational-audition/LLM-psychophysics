@@ -1,0 +1,1 @@
+This repository contains all data and analysis code (under /analysis), as well as experiment code (under /experiment) associated with the paper "Large Language Models Predict Human Sensory Judgments Across Six Modalities" by Raja Marjieh, Ilia Sucholutsky, Pol van Rijn, Nori Jacoby and Thomas L. Griffiths (2024).
